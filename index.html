@@ -21,7 +21,7 @@
 	
 			</header>
 			
-			<section>
+			<section id = "ingredients" onmouseover="ingredientsHover()" onmouseout="ingredientsNormal()">
 				<h2>Ingredients <i class="fa fa-coffee" aria-hidden="true"></i></h2>
 				<ul>
 					<li>Tea Bag</li>
@@ -31,7 +31,7 @@
 				</ul>
 			</section>
 			
-			<section>
+			<section id = "preparation" onmouseover="preparationHover()" onmouseout="preparationNormal()">
 				<h2>Preparation <i class="fa fa-check" aria-hidden="true"></i></h2>
 				<ol>
 					<li>
@@ -64,6 +64,21 @@
 	
 		</div>
 		
-		<script src="script.js"></script>
+		<script>
+			
+	    function ingredientsHover(){
+	    document.getElementById("ingredients").style.fontSize = "200%";
+	    }
+		function ingredientsNormal(){
+		    document.getElementById("ingredients").style.fontSize = "100%";
+		}
+		function preparationHover(){
+		    document.getElementById("preparation").style.fontSize = "200%";
+		}
+		function preparationNormal(){
+		    document.getElementById("preparation").style.fontSize = "100%";
+		}
+    		
+		</script>
 	</body>
 </html>
